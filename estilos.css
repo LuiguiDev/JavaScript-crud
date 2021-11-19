@@ -1,0 +1,75 @@
+body{
+    background-color: steelblue;
+}
+@keyframes fade-out{
+    from {
+        0%{ opacity: 1; }
+    }
+    to{
+        100% { opacity: 0; }
+    }
+}
+.container{
+    width: 900px;
+    height: 500px;
+}
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+img{
+    display: block;
+    background: radial-gradient(transparent 1%, rgb(29, 29, 29) 50%, black 80%);
+    animation-name: fade-in;
+    animation-duration: 6s;
+    opacity: 0;
+
+}
+.cover{
+    width: 900px;
+    height: 500px;
+    background: radial-gradient(transparent 1%, rgb(29, 29, 29) 50%, black 80%);
+    animation-duration: 6s;
+    animation-name: fade;
+    opacity: 0;
+}
+.cortain{
+    width: 900px;
+    height: 500px;
+    background-color: rgba(175, 43, 43, 0.205);
+    animation-duration: 6s;
+    animation-name: fade;
+    opacity: 0;
+}
+@keyframes fade{
+    from {
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
